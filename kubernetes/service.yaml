@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: super-service
+    environment: beta
+  name: super-service
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: super-service
+    environment: beta
+  sessionAffinity: None
+  type: ClusterIP
