@@ -1,0 +1,18 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: super-service
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  template:
+    metadata:
+      labels:
+        app: super-service
+        environment: beta
+    spec:
+      containers:
+        - name: super-service
+          image: skatz/super-service
+          ports:
+            - containerPort: 80
