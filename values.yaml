@@ -9,7 +9,7 @@ image:
   repository: r.cfcr.io/teacherspayteachers/phsteve/kube-service
   tag: master # cf automatically tags images by branch name TODO: parameterize this
   pullPolicy: IfNotPresent
-  pullSecret: codefresh-generated-r.cfcr.io-cfcr-default
+  pullSecret: codefresh-docker-registry
 
 service:
   type: ClusterIP
