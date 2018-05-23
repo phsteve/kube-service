@@ -6,8 +6,8 @@
 replicaCount: 1
 
 image:
-  repository: skatz/kube-service
-  tag: latest
+  repository: r.cfcr.io/teacherspayteachers/phsteve/kube-service
+  tag: master # cf automatically tags images by branch name TODO: parameterize this
   pullPolicy: IfNotPresent
 
 service:
