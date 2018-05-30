@@ -4,7 +4,7 @@ app = flask.Flask(__name__)
 
 @app.route('/api/some_endpoint')
 def some_endpoint():
-    return flask.jsonify({'data': 'some really cool data'})
+    return flask.jsonify({'data': 'some really cool data from pr-service-1'})
 
 @app.route('/')
 def index():
