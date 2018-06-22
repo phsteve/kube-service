@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ template "kube-service.fullname" . }}
+  name: {{ template "kube-service.name" . }}
   labels:
     app: {{ template "kube-service.name" . }}
     chart: {{ template "kube-service.chart" . }}
